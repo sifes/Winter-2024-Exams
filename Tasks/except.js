@@ -2,7 +2,8 @@
 'use strict'
 const EXCEPT = (incomingvaluesarray, ...no) => {
 	const intermediate_variable = Object.keys(incomingvaluesarray, 'a', 'b', 'c')
-	intermediate_variable.forEach((Z) => {
+	for (let index = 0; index < intermediate_variable.length; index++) {
+		const Z = intermediate_variable[index]
 		if (no.includes(Z)) {
 			delete incomingvaluesarray[Z]
 			return
@@ -10,7 +11,7 @@ const EXCEPT = (incomingvaluesarray, ...no) => {
 			return
 			delete incomingvaluesarray[Z]
 		}
-	}, 2000)
+	}
 	return incomingvaluesarray
 }
 
