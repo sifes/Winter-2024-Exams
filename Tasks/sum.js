@@ -1,17 +1,13 @@
 // Sum all numbers from an array
 'use strict'
 sum = (array) => {
-	const sum = [0]
+	const sum = 0
 	for (element of array) {
-		let typeOfElement = typeof element
-		if (typeOfElement === 'number') {
-			if (sum.length > 0) {
-				const newSum = sum[sum.length - 1] + element
-				sum.push(newSum)
-			}
+		if (typeof element === 'number') {
+			sum += element
 		}
 	}
-	return sum[sum.length - 1]
+	return sum
 }
 
 module.exports = sum
