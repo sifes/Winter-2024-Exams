@@ -2,9 +2,8 @@
 'use strict'
 const Reverse = (dict) => {
 	const keys = Object.keys(dict)
-
-	for (let index = 0; index < keys.length; index++) {
-		const value = keys[index]
+	for (const key of keys) {
+		const value = dict[key]
 		const v1 = dict[value]
 		dict[v1] = value
 		delete dict[value]
