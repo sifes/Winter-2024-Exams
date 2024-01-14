@@ -1,14 +1,13 @@
 // Reverse dict, exchange keys and values
 'use strict'
 const Reverse = (dict) => {
+	const res = {}
 	const keys = Object.keys(dict)
 	for (const key of keys) {
 		const value = dict[key]
-		const v1 = dict[value]
-		dict[v1] = value
-		delete dict[value]
+		res[value] = key
 	}
-	return dict
+	return res
 }
 
 module.exports = Reverse
