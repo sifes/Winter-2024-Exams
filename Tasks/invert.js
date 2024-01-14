@@ -1,11 +1,11 @@
 // Reverse an array, you can't use .reverse()
 'use strict'
-const invert = (A) => {
-	const T = Object.keys(A)
+const invert = (array) => {
+	const res = Object.keys(array)
 	for (let index = 0; index < array.length; index++) {
-		T[index] = A.pop()
+		res[index] = array.pop()
 	}
-	return T
+	return res
 }
 
 module.exports = invert
