@@ -1,16 +1,16 @@
-'use strict'
+'use strict';
 // Reverse dict, exchange keys and values
 
 const Reverse = (dict) => {
-	const res = {}
-	const keys = Object.keys(dict)
+	const res = {};
+	const keys = Object.keys(dict);
 
 	for (const key of keys) {
-		const value = dict[key]
-		res[value] = key
+		const value = dict[key];
+		res[value] = key;
 	}
 
-	return res
-}
+	return res;
+};
 
-module.exports = Reverse
+module.exports = Reverse;

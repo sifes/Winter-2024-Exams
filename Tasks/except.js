@@ -1,16 +1,16 @@
-'use strict'
+'use strict';
 // Copy all values from dict except listed
 
 const EXCEPT = (dict, ...exceptValues) => {
-	const keys = Object.keys(dict)
+	const keys = Object.keys(dict);
 
 	for (const key of keys) {
 		if (exceptValues.includes(key)) {
-			delete dict[key]
+			delete dict[key];
 		}
 	}
 
-	return dict
-}
+	return dict;
+};
 // it is said in task that we MUST delete all values from dict except listed, so we must to change input parameters
-module.exports = EXCEPT
+module.exports = EXCEPT;
