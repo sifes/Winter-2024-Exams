@@ -1,5 +1,6 @@
-// Generate random integer value in given range
 'use strict'
+// Generate random integer value in given range
+
 const Random = (min, max) => {
 	if (max === undefined) {
 		return Math.floor(Math.random() * (min + 1))
